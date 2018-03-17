@@ -24,7 +24,7 @@ if(i!="2") b.attr('tag', '1')
 var ready = parseInt(i)+1
 if(ready==3) {
 window.location = 'set:'+b.parent().attr('data-url')
-Android.Event('set',b.parent().attr('data-url'),'')
+Android.Event('set:',b.parent().attr('data-url'),'')
 } else {
 b.parent().attr('tag',ready)
 Android.Alert('Server Error, Try Another!')
